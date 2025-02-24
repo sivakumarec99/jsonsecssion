@@ -17,6 +17,9 @@
 		011694F82D6C78F50045DD42 /* JasonSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011694F72D6C78F50045DD42 /* JasonSessionTests.swift */; };
 		011695022D6C78F60045DD42 /* JasonSessionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011695012D6C78F60045DD42 /* JasonSessionUITests.swift */; };
 		011695042D6C78F60045DD42 /* JasonSessionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011695032D6C78F60045DD42 /* JasonSessionUITestsLaunchTests.swift */; };
+		011695132D6C7A4A0045DD42 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011695122D6C7A4A0045DD42 /* Product.swift */; };
+		011695162D6C7A6B0045DD42 /* ProductNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011695152D6C7A6B0045DD42 /* ProductNewModel.swift */; };
+		0116951A2D6C7A920045DD42 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011695192D6C7A920045DD42 /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		011694FD2D6C78F50045DD42 /* JasonSessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JasonSessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011695012D6C78F60045DD42 /* JasonSessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasonSessionUITests.swift; sourceTree = "<group>"; };
 		011695032D6C78F60045DD42 /* JasonSessionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JasonSessionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		011695122D6C7A4A0045DD42 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		011695152D6C7A6B0045DD42 /* ProductNewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNewModel.swift; sourceTree = "<group>"; };
+		011695192D6C7A920045DD42 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		011694DC2D6C78F30045DD42 /* JasonSession */ = {
 			isa = PBXGroup;
 			children = (
+				011695102D6C7A2C0045DD42 /* Products */,
 				011694DD2D6C78F30045DD42 /* AppDelegate.swift */,
 				011694DF2D6C78F30045DD42 /* SceneDelegate.swift */,
 				011694E12D6C78F30045DD42 /* ViewController.swift */,
@@ -128,6 +135,40 @@
 				011695032D6C78F60045DD42 /* JasonSessionUITestsLaunchTests.swift */,
 			);
 			path = JasonSessionUITests;
+			sourceTree = "<group>";
+		};
+		011695102D6C7A2C0045DD42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011695172D6C7A7A0045DD42 /* View */,
+				011695142D6C7A5B0045DD42 /* Model */,
+				011695112D6C7A3A0045DD42 /* data */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		011695112D6C7A3A0045DD42 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				011695122D6C7A4A0045DD42 /* Product.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		011695142D6C7A5B0045DD42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				011695152D6C7A6B0045DD42 /* ProductNewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		011695172D6C7A7A0045DD42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				011695192D6C7A920045DD42 /* ProductView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011695162D6C7A6B0045DD42 /* ProductNewModel.swift in Sources */,
 				011694E82D6C78F30045DD42 /* JasonSession.xcdatamodeld in Sources */,
 				011694E22D6C78F30045DD42 /* ViewController.swift in Sources */,
+				011695132D6C7A4A0045DD42 /* Product.swift in Sources */,
+				0116951A2D6C7A920045DD42 /* ProductView.swift in Sources */,
 				011694DE2D6C78F30045DD42 /* AppDelegate.swift in Sources */,
 				011694E02D6C78F30045DD42 /* SceneDelegate.swift in Sources */,
 			);
@@ -460,6 +504,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivakumar.JasonSession;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,6 +535,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sivakumar.JasonSession;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
